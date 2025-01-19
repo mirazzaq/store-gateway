@@ -18,7 +18,7 @@ class OrderService
 
     public function __construct()
     {
-        $this->baseUri = config('services.orders.base_url');
+        $this->baseUri = config('services.orders.base_uri');
         $this->secret = config('services.orders.secret');
     }
 

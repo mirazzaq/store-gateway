@@ -12,7 +12,7 @@ trait RequestService
         ]);
 
         if (isset($this->secret)) {
-            $headers['Authoriztion'] = $this->secret;
+            $headers['Authorization'] = $this->secret;
         }
 
         $response = $client->request($method, $requestUrl,
